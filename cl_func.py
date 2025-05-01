@@ -19,12 +19,3 @@ def translate_german_to_english(cloud_event):
     translated_text = result['translatedText']
 
     print(f"Translated to English: {translated_text}")
-
-## Deployment
-# To deploy this function, use the following command:
-#gcloud run deploy python-http-function \
-    #   --source . \
-    #   --function translate_german_to_english\
-    #   --base-image python312 \
-    #   --region REGION \
-    #   --allow-unauthenticated
